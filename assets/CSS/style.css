@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900|Exo:100,200,300,400,500,600,700,800,900|Pacifico:100,200,300,400,500,600,700,800,900');
+
+
+/*---------------------------------coloring*/
+.bg-color-header {
+    background-color:#fef6e4;
+}
+
+h1
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+/*--------------------------------------------------------Heading*/
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    margin: 0;
+    padding:0;
+}
+
+.title{
+    margin:0;
+    margin-left: 10px;
+    padding:0;
+}
+
+.heading-name {
+    font-family: "Pacifico", "Exo", sans-serif;
+    font-weight: 200;
+    color: black;
+    font-size: 50px;
+    float: left;
+    text-shadow: 2px 2px white;
+    margin-top:10px;
+}
+
+/* ------------------ Commenting this section for the moment
+.heading-name:hover {
+    background-color: grey;
+    color: #FFFFF0;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+------------------------------------*/
+
+#nav{
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem{
+    padding-top: 50px;
+}
+.menuitem span{
+    font-family: "Roboto+Condensed" , sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+}
+.menuitem i{
+    font-size:30px;
+    margin-right: 20px;
+    color: black;
+}
+
+
+/*---------------------------------------------------------- Footer*/
+footer {
+    background-color: black;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+    padding-left:15px;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #fef6e4;
+    color: black;
+}
+
+#footer-details {
+    margin-top:20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0;
+    max-width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #e84610;
+    color: #fafafa;
+}
+
+button[type="submit"]:hover {
+    background-color: #fef6e4;
+    color: black;
+}
+
+.general-sub {
+    font-family: "Roboto+Condensed", sans-serif;
+    font-weight: 700;
+    color: #fafafaf;
+    margin-bottom: 10px;
+}
+
+/*--------------------------Media Queries*/
