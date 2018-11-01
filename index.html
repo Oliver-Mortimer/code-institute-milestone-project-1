@@ -8,60 +8,65 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css" />
-    <title>Garreth Carroll</title>
+    <title> Garreth Carroll | Artist </title>
 </head>
 
 <body>
-    <!--Start of the header section. Navigational links and social links to be found here-->
-
-    <header class="container-fluid bg-color-header main-header">
-
-
-        <div="row">
-            <div class="col-xs-6 col-sm-6 col-md-4 title">
-                <a href="index.html">
-                    <h1 class="heading-name"> Garreth Carroll </h1>
+    <!--Begining of Header-->
+    <header class="container-fluid bg-color-header">
+        <div class="row">
+            <div class="title-header col-xs-6 col-md-4">
+                <a href="#" style="text-decoration:none">
+                    <h1> Garreth Carroll | Artist </h1>
                 </a>
             </div>
-                <div class="col-sm-8 navigation">
-                    <ul id=nav class="list-inline clearfix">
-                        <li class="col-xs-6 col-sm-3 col-md-3 menuitem">
-                            <a href="index.html" class="hvr-sweep-to-bottom"><i class= "fa fa-home" arla-hidden="true"></i><span>Home</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-3 col-md-3 menuitem">
-                            <a href="#" class="hvr-sweep-to-bottom"><i class= "fa fa-pencil" arla-hidden="true"></i><span>Gallary</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-3 col-md-3 menuitem">
-                            <a href="#" class="hvr-sweep-to-bottom"><i class= "fa fa-address-card-o" arla-hidden="true"></i><span>About</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-3 col-md-3 menuitem">
-                            <a href="#" class="hvr-sweep-to-bottom"><i class= "fa fa-envelope" arla-hidden="true"></i><span>Contact</span></a>
-                        </li>
+
+            <div class="navbar-header hidden-xs hidden-sm col-md-8">
+                <nav class="navbar-default navigation">
+                    <ul class="navbar-list">
+                        <li class="uppercase general-sub"><a href="#" style="text-decoration:none">Home</li></a>
+                            <li class="uppercase general-sub"><a href="#" style="text-decoration:none">Gallery</li></a>
+                                <li class="uppercase general-sub"><a href="#" style="text-decoration:none">About</li></a>
+                                    <li class="uppercase general-sub"><a href="#" style="text-decoration:none">Contact</li></a>
                     </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Begining of Section-->
+
+    <section class="container-fluid bg-color-section">
+        <div class="row">
+            <div class="main-section">
+                <div class="main-section-image col-xs-12 col-md-6 col-lg-4 ">
+                    <img src="assets/images/Img1-oldman&pickachu.jpg" alt="Garreth Carroll imagery old man and pickachu" style="width:490px;height:590px;">
+                </div>
+                <div class="main-section-image hidden-xs hidden-sm col-md-6 col-lg-4  ">
+                    <img src="assets/images/Img1-oldman&pickachu.jpg" alt="Garreth Carroll imagery old man and pickachu" style="width:490px;height:590px;">
+                </div>
+                <div class="main-section-image hidden-md hidden-xs hidden-sm col-lg-4 ">
+                    <img src="assets/images/Img1-oldman&pickachu.jpg" alt="Garreth Carroll imagery old man and pickachu" style="width:490px;height:590px;">
                 </div>
             </div>
-    </header>
-    <!--End of the head section.-->
-
-    <!--Start of the section. main landing page image, Artists name, possible multiple image rotation-->
-    <section>
-
+        </div>
     </section>
-    <!--End of the section.-->
 
+    <!--End of Section-->
 
-    <!--Start of the footer section. "About Section" - (reference to the site not the artist), social links  and sign up (email updates) to be found here-->
-    <footer class "container-fluid">
+    <!--Begining of Footer-->
+    <footer class="footer container-fluid bg-color-footer">
         <div class="row">
-            <div id="footer-details">
-                <div class="col-sm-4">
-                    <h5 class="uppercase general-sub"> About</h5>
-                    <p class="inline-block">
-                        Full Stack Web Developer. Skilled in everything from HTML to Heroku The capacity for structural and design thinking.
-                    </p>
+            <div class="col-xs-6 col-md-4">
+                <div class="footer-about">
+                    <h3 class="uppercase general-sub"> About</h3>
+                    <p class="inline-block">Full time Teacher and Artist. Specialise in pencil drawings.</p>
                 </div>
-                <div class="col-sm-4">
-                    <h5 class="uppercase general-sub">Stay Connected </h5>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-4">
+                <div class="stay-connected">
+                    <h3 class="uppercase general-sub">Stay Connected </h3>
                     <div class="center-form">
                         <form>
                             <input type="text" name="email" class="form-control" id="email" placeholder="Email" required />
@@ -69,21 +74,24 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <h5 class="uppercase general-sub"> My Social </h5>
-                    <ul class="list-inline social-links">
-                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <div class="social-links">
+                    <h3 class="uppercase general-sub"> My Social </h3>
+                    <ul class="list-inline">
+                        <li class="social-links-images"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-links-images"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="social-links-images"><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social-links-images"><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li class="social-links-images"><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="social-links-images"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <!--end of footer section-->
-</body>
+    <!--End of Footer-->
+
+    <body>
 
 </html>
