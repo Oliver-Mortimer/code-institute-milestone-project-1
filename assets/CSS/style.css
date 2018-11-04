@@ -13,34 +13,31 @@
 .bg-color-footer {
     background-color: #e6e6e6;
 }
+
 /*---------------images*/
 
-img {
+.main-section-image img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 2px;
-    
-    
+
+    width: 500px;
+    height: 570px;
+
     display: block;
-    margin: auto;
+    margin:auto;
 }
+
 /*----------------------------h1,h2 etc*/
 
-.title-header h1 {
+.title-header a h1 {
     font-family: "Inconsolata", sans-sarif;
     font-size: 35px;
-
-     transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
-.title-header h1:hover {
-    border-bottom-style: solid;
-    border-bottom-color: black;
+footer h3{
+    letter-spacing: 2px;
 }
-
 .title-header a {
     color: inherit;
 }
@@ -88,7 +85,7 @@ img {
     color: black;
     font-family: "Inconsolata" sans-serif;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 
     transition: all 0.75s ease-in-out;
     -moz-transition: all 0.75s ease-in-out;
@@ -109,13 +106,13 @@ img {
 
 /*------------------------Section*/
 
-.main-section{
-    margin:0;
+.main-section {
+    margin: 0;
     margin-right: 15px;
 }
 
 .main-section-image {
-    margin:10px 0 10px 0;
+    margin: 10px 0 10px 0;
 
 }
 
@@ -125,13 +122,45 @@ footer {
     color: black;
     margin: 0;
     padding-left: 5px;
+    text-align: center;
 }
 
 .social-links,
-.stayconnect,
-.footer-about{
-    margin:0;
+.stay-connected,
+.footer-about {
+    margin: -15px;
     padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.center-form {
+    width: 415px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+#email {
+    text-align: center;
+}
+
+.btn-secondary {
+    color: black;
+    background-color: #66ccff;
+
+    border-style: solid;
+    border-color: black;
+
+    margin-top: 5px;
+
+    transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -webkit-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: grey;
 }
 
 .social-links li a i {
@@ -164,3 +193,148 @@ footer {
 }
 
 /*--------------------------Media Queries*/
+
+/*--------------------------Small Screen*/
+
+/*Header media query*/
+
+@media (min-width:200px) and (max-width:767px) {
+    .title-header {
+        width: 100%;
+        margin-bottom:-3%;
+    }
+
+    .title-header a h1 {
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .navbar-header {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .navbar-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-list li a {
+        font-size: 120%;
+    }
+
+    .navbar-list li {
+        padding: 2%;
+        height: 30%;
+    }
+
+    /*Main section media query*/
+    .main-section-image img {
+        width: 100%;
+        height: 100%;
+        margin-left: 2.5%;
+    }
+
+    /*footer media query*/
+
+    .social-links,
+    .footer-about {
+        margin: 0%;
+    }
+    
+    .social-links h3{
+        margin-top: 1%;
+        font-size: 120%;
+    }
+    .footer-about h3{
+        margin-top: 4%;
+        font-size: 120%;
+    }
+    
+    .list-inline li {
+        padding: 0%;
+        padding-top: 2%;
+    }
+    .list-inline li a i{
+        font-size: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .footer-about p {
+        font-size: 80%;
+        max-width: 100%;
+    }
+}
+
+/*--------------------------Medium Screen*/
+
+@media (min-width: 767px) and (max-width: 992px)
+{
+        .title-header {
+        width: 100%;
+        margin-bottom:-3%;
+    }
+
+    .title-header a h1 {
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .navbar-header {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .navbar-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-list li a {
+        font-size: 120%;
+    }
+
+    .navbar-list li {
+        padding: 2%;
+        height: 30%;
+    }
+
+    /*Main section media query*/
+    .main-section-image img {
+        width: 100%;
+        height: 100%;
+        margin-left: 2.5%;
+    }
+
+    /*footer media query*/
+
+    .social-links,
+    .footer-about {
+        margin: 0%;
+    }
+    
+    .social-links h3{
+        margin-top: 1%;
+        font-size: 120%;
+    }
+    .footer-about h3{
+        margin-top: 4%;
+        font-size: 120%;
+    }
+    
+    .list-inline li {
+        padding: 0%;
+        padding-top: 2%;
+    }
+    .list-inline li a i{
+        font-size: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .footer-about p {
+        font-size: 80%;
+        max-width: 100%;
+    }
+}
