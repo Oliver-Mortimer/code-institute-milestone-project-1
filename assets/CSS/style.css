@@ -14,18 +14,64 @@
     background-color: #e6e6e6;
 }
 
+.bg-color-quotes {
+    background-color: #aaaaaa;
+}
+
 /*---------------images*/
 
+
 .main-section-image img {
-    border: 1px solid #ddd;
+    border: 3px;
+    border-style: solid;
+    border-color: #ddd;
     border-radius: 4px;
+
     padding: 2px;
 
     width: 500px;
     height: 570px;
 
     display: block;
-    margin:auto;
+    margin: auto;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out
+}
+
+.main-section-image img:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: #990000;
+}
+
+.gallery-section-image img {
+    border: 1px;
+    border-style: solid;
+    border-color: #990000;
+    border-radius: 4px;
+
+    padding: 2px;
+    width: 410px;
+    height: 420px;
+    display: block;
+    margin: auto;
+
+/*--Need to figure out the JavaScript for this to work correctly--*/
+    cursor: zoom-in;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out
+}
+
+.gallery-section-image img:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: #990000;
 }
 
 /*----------------------------h1,h2 etc*/
@@ -35,9 +81,15 @@
     font-size: 35px;
 }
 
-footer h3{
+section h2 {
+    font-family: "Inconsolata", sans-sarif;
+    font-size: 35px;
+}
+
+footer h3 {
     letter-spacing: 2px;
 }
+
 .title-header a {
     color: inherit;
 }
@@ -52,6 +104,10 @@ footer h3{
 
 .general-sub {
     font-family: "Inconsolata", sans-serif;
+}
+
+blockquote p {
+    font-size: 20px;
 }
 
 /*--------------------------------------------------------Heading*/
@@ -113,7 +169,31 @@ footer h3{
 
 .main-section-image {
     margin: 10px 0 10px 0;
+}
 
+.quotes-main-container {
+    margin-right: -10px;
+    margin-bottom: 10px;
+
+    border: 3px;
+    border-style: solid;
+    border-color: #ddd;
+    border-radius: 4px;
+
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.quotes-main-container:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: #990000;
+}
+
+.gallery-section-image {
+    margin: 10px 0 10px 0;
 }
 
 /*---------------------------------------------------------- Footer*/
@@ -145,7 +225,7 @@ footer {
 
 .btn-secondary {
     color: black;
-    background-color: #66ccff;
+    background-color: #990000;
 
     border-style: solid;
     border-color: black;
@@ -173,7 +253,7 @@ footer {
     color: #fafafa;
     background: #8f8f8f;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -201,7 +281,7 @@ footer {
 @media (min-width:200px) and (max-width:767px) {
     .title-header {
         width: 100%;
-        margin-bottom:-3%;
+        margin-bottom: -3%;
     }
 
     .title-header a h1 {
@@ -235,32 +315,48 @@ footer {
         margin-left: 2.5%;
     }
 
-    /*footer media query*/
+    .gallery-section-image img {
+        width: 100%;
+        height: 100%;
+        margin-left: 2.5%;
+    }
+    
+    .quotes-main-container{
+        width:95%;
+        height:100%;
+        margin-left:2.5%;
+    }
+    
+     blockquote p{
+        font-size: 80%;
+        max-width: 100%;
+    }
 
+    /*footer media query*/
     .social-links,
     .footer-about {
         margin: 0%;
     }
-    
-    .social-links h3{
+
+    .social-links h3 {
         margin-top: 1%;
         font-size: 120%;
     }
-    .footer-about h3{
+    .footer-about h3 {
         margin-top: 4%;
         font-size: 120%;
     }
-    
+
     .list-inline li {
         padding: 0%;
         padding-top: 2%;
     }
-    .list-inline li a i{
+    .list-inline li a i {
         font-size: 100%;
         padding: 0%;
         margin: 0%;
     }
-    
+
     .footer-about p {
         font-size: 80%;
         max-width: 100%;
@@ -269,11 +365,10 @@ footer {
 
 /*--------------------------Medium Screen*/
 
-@media (min-width: 767px) and (max-width: 992px)
-{
-        .title-header {
+@media (min-width: 768px) and (max-width: 992px) {
+    .title-header {
         width: 100%;
-        margin-bottom:-3%;
+        margin-bottom: -3%;
     }
 
     .title-header a h1 {
@@ -302,39 +397,57 @@ footer {
 
     /*Main section media query*/
     .main-section-image img {
-        width: 100%;
+        width: 95%;
         height: 100%;
         margin-left: 2.5%;
     }
 
-    /*footer media query*/
+    .gallery-section-image img {
+        width: 100%;
+        height: 100%;
+        margin-left: 2.5%;
+    }
+    
+    .quotes-main-container{
+        width:100%;
+        height:100%;
+        margin-left:2.5%;
+    }
+    
+    blockquote p{
+        font-size: 80%;
+        max-width: 100%;
+    }
 
+    /*footer media query*/
     .social-links,
     .footer-about {
         margin: 0%;
     }
-    
-    .social-links h3{
+
+    .social-links h3 {
         margin-top: 1%;
         font-size: 120%;
     }
-    .footer-about h3{
+    .footer-about h3 {
         margin-top: 4%;
         font-size: 120%;
     }
-    
+
     .list-inline li {
         padding: 0%;
         padding-top: 2%;
     }
-    .list-inline li a i{
+    .list-inline li a i {
         font-size: 100%;
         padding: 0%;
         margin: 0%;
     }
-    
+
     .footer-about p {
         font-size: 80%;
         max-width: 100%;
     }
 }
+
+/*-- Media query for Ipad Pro--*/
