@@ -1,7 +1,7 @@
 # Your Project's Name
 Garreth Carroll - Artist.
 
-My first Milestone Project
+My first Milestone Project.
 Throughout this project I will be using everything that I have learnt so far from Code Institue. This project will consist of HTML5, CSS3 bootstrap framwork & fancybox plugins.
 
 
