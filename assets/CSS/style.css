@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:100,200,300,400,500,600,700,800,900|Exo:100,200,300,400,500,600,700,800,900|Pacifico:100,200,300,400,500,600,700,800,900');
 
-/*---------------------------------coloring*/
+/*--------------------------------------------------------------------------------------------------------------------------BG-color--*/
 
 .bg-color-header,
 .bg-color-footer {
@@ -10,8 +10,9 @@
 .bg-color-quotes {
     background-color: #aaaaaa;
 }
+/*--------------------------------------------------------------------------------------------END BG-color--*/
 
-/*---------------images*/
+/*-----------------------------------------------------------------------------------------------------------------------------images*/
 
 .main-section-image img {
     border: 3px;
@@ -27,7 +28,6 @@
     display: block;
     margin: auto;
 
-    /*--Need to figure out the JavaScript for this to work correctly--*/
     cursor: zoom-in;
 
     transition: all 0.3s ease-in-out;
@@ -37,6 +37,34 @@
 }
 
 .main-section-image img:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: #990000;
+}
+
+.about-main-section-image img{
+    border: 3px;
+    border-style: solid;
+    border-color: #ddd;
+    border-radius: 4px;
+
+    padding: 2px;
+
+    width: 500px;
+    height: 570px;
+
+    display: block;
+    margin: auto;
+
+    cursor: zoom-in;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out
+}
+
+.about-main-section-image img:hover{
     border: 5px;
     border-style: solid;
     border-color: #990000;
@@ -54,7 +82,6 @@
     display: block;
     margin: auto;
 
-    /*--Need to figure out the JavaScript for this to work correctly--*/
     cursor: zoom-in;
 
     transition: all 0.3s ease-in-out;
@@ -69,7 +96,35 @@
     border-color: #990000;
 }
 
-/*----------------------------h1,h2 etc*/
+.contact-main-section-image img{
+    border: 3px;
+    border-style: solid;
+    border-color: #ddd;
+    border-radius: 4px;
+
+    padding: 2px;
+
+    width: 500px;
+    height: 570px;
+
+    display: block;
+
+    cursor: zoom-in;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out
+}
+
+.contact-main-section-image img:hover{
+    border: 5px;
+    border-style: solid;
+    border-color: #990000;
+}
+/*------------------------------------------------------------------------------------ END images*/
+
+/*--------------------------------------------------------------------------------------------------------------------------h1,h2,a etc*/
 
 .title-header a h1 {
     font-family: "Inconsolata", sans-sarif;
@@ -101,16 +156,39 @@ footer h3 {
     font-family: "Inconsolata", sans-serif;
 }
 
-.about-paragraph-section p {
-    font-family: "Exo", sans-serif;
+
+
+blockquote p {
     font-size: 20px;
-    font-weight: 400;
-    color: black;
 }
 
-/*--------------------------------------------------------Heading*/
+blockquote footer {
+    color: white;
+}
 
-/*-----------------------Navbar*/
+.youtube-paragraph-section h4{
+    font-size: 17px;
+    font-family: "Exo" sans-serif;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.about-paragraph-section p, .gallery-paragraph-section{
+    font-size: 20px;
+    font-family: "Exo" sans-serif;
+    text-align: center;
+    
+    padding-bottom: 10px;
+    color:black;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/*-----------------------------------------------------------------------------END h1,h2,a etc*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------Heading*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------Navbar*/
 
 .navbar-header {
     margin-top: 20px;
@@ -154,13 +232,13 @@ footer h3 {
     border-bottom-color: #990000;
 }
 
-/*-----------------------END Navbar*/
+/*--------------------------------------------------------END Navbar*/
 
 /*--------------------------------------------------------END Heading*/
 
-/*------------------------Section*/
+/*----------------------------------------------------------------------------------------------------------------------------Section*/
 
-.full-section-image, .about-main-section{
+.full-section-image{
     height:100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,6 +256,12 @@ footer h3 {
 
 .main-section-image {
     margin: 10px 0 10px 0;
+}
+
+.quotes-container {
+    margin-bottom: 2%;
+    font-family: "Exo", sans-serif;
+    color: white;
 }
 
 .quotes-main-container, .youtube-main-section{
@@ -206,32 +290,16 @@ footer h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
-
 
 .about-main-section{
-    margin: 10px 5px 10px 5px;
-    border: 5px;
-    border-style: solid;
-    border-color: #ddd;
-    border-radius: 4px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin: 10px 0 10px 0 ;
 }
-
-.quotes-container {
-    margin-bottom: 2%;
-    font-family: "Exo", sans-serif;
-    color: white;
-}
-
-blockquote p {
-    font-size: 20px;
-}
-
-blockquote footer {
-    color: white;
-}
-
 .gallery-section-image {
     margin: 10px 0 10px 0;
 }
@@ -242,9 +310,7 @@ blockquote footer {
     color: white;
 }
 
-.about-page-header {
-    text-align: center;
-    margin-top: -10px;
+.about-page-header, .gallery-page-header{
     color: black;
 }
 
@@ -271,22 +337,6 @@ iframe {
     border-style: solid;
     border-color: #ddd;
     border-radius: 4px;
-}
-
-.youtube-paragraph-section h4{
-    font-size: 17px;
-    font-family: "Exo" sans-serif;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.about-paragraph-section p{
-    font-size: 17px;
-    font-family: "Exo" sans-serif;
-    padding-bottom: 10px;
-    color:black;
-    font-weight: 500;
-    margin-top: 10px;
 }
 
 .contact-heading {
@@ -324,8 +374,13 @@ iframe {
     border-radius: 4px;
     
 }
+.contact-main-section{
+    width:97%;
+    margin-left: .5%
+}
 
-/*---------------------------------------------------------- Footer*/
+/*-------------------------------------------------------------------------------------------END Section--*/
+/*----------------------------------------------------------------------------------------------------------------------------------------Footer*/
 
 .footer {
     color: black;
@@ -403,10 +458,11 @@ iframe {
 .social-links-images {
     margin: 0;
 }
+/*-----------------------------------------------------------------END footer*/
 
-/*--------------------------Media Queries*/
+/*-----------------------------------------------------------------------------------------------------------------------------Media Queries*/
 
-/*--------------------------Small Screen*/
+/*------------------------------------------------------------------------------------------------------------------------------Small Screen*/
 
 /*Header media query*/
 
@@ -441,21 +497,16 @@ iframe {
     }
 
     /*Main section media query*/
-    .main-section {
-        margin-right: -2%;
-    }
     .main-section-image img {
-        width: 93%;
+        width: 101.5%;
         height: 100%;
-        padding: 0;
-        margin-left: 10px;
+        margin-left: 3%;
     }
 
     .quotes-main-container {
-        width: 98%;
+        width: 100%;
         height: 100%;
         margin-left: 0px;
-
     }
 
     blockquote p {
@@ -464,7 +515,7 @@ iframe {
     }
 
     .youtube-main-section {
-        width: 98%;
+        width: 100%;
         height: 100%;
         margin-left: 0px;
     }
@@ -482,18 +533,37 @@ iframe {
     }
 
     iframe {
-        width: 200px;
+        width: 250px;
         height: 200px;
-
     }
-
+    
     .gallery-section-image img {
         width: 100%;
         height: 100%;
-        margin-left: 2.5%;
+        margin-left: 5%;
         padding: 0;
     }
-
+    
+    .about-main-section{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin-right: -10%;
+    }
+    
+    .about-main-section a img, .contact-main-section a img{
+        width:90%;
+        height:75%;
+        margin-bottom: 5%;
+        margin-top:5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    #contact-section{
+        padding-bottom: 500px;
+    }
+    
     /*footer media query*/
     .social-links,
     .footer-about {
@@ -524,8 +594,9 @@ iframe {
         max-width: 100%;
     }
 }
+/*---------------------------------------------END Small Screen*/
 
-/*--------------------------Medium Screen*/
+/*----------------------------------------------------------------------------------------------------------------------Medium Screen*/
 
 @media (min-width: 768px) and (max-width: 991px) {
     .title-header {
@@ -558,7 +629,7 @@ iframe {
     }
 
     /*Main section media query*/
-    .main-section-image img {
+    .main-section-image img{
         width: 95%;
         height: 100%;
         margin-left: 2.5%;
@@ -566,6 +637,13 @@ iframe {
     }
 
     .gallery-section-image img {
+        width: 100%;
+        height: 100%;
+        margin-left: 2.5%;
+        padding: 0;
+    }
+    
+    .about-main-section-image img{
         width: 100%;
         height: 100%;
         margin-left: 2.5%;
@@ -638,8 +716,9 @@ iframe {
         max-width: 100%;
     }
 }
+/*-------------------------------------------------------------END Medium Screen*/
 
-/*-- Media query for Ipad Pro --*/
+/*-------------------------------------------------------------------------------------------------------------------------- Media query for Ipad Pro --*/
 
 @media (min-width: 1024px) and (max-width: 1024px) {
     .gallery-section-image img {
@@ -660,9 +739,22 @@ iframe {
         width: 700px;
         height: 500px;
     }
+        .about-main-section a img, .contact-main-section a img{
+        width:90%;
+        height:75%;
+        margin-bottom: 5%;
+        margin-top:5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    #contact-section{
+        padding-bottom: 500px;
+    }
 }
+/*-------------------------------------------------------END Media query for Ipad Pro --*/
 
-/*-- Media query for quotes Ipad  --*/
+/*--------------------------------------------------------------------------------------------------------------------- Media query for quotes Ipad  --*/
 
 @media (min-width: 768px) and (max-width: 768px) {
     .quotes-main-container {
@@ -670,6 +762,18 @@ iframe {
     }
     .main-section {
         margin-left: -2%;
-        margin-right: -2%;
+    }
+        .about-main-section a img, .contact-main-section a img{
+        width:90%;
+        height:75%;
+        margin-bottom: 5%;
+        margin-top:5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    #contact-section{
+        padding-bottom: 500px;
     }
 }
+/*-------------------------------------------------------END Media query for Ipad Pro --*/
