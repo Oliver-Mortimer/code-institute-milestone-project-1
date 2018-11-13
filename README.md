@@ -52,7 +52,7 @@ The website is built using HTML5, CSS3 and Bootstrap framework, little JS/Jquery
 The site is fully functional without any local files needed to be downloaded all frameworks and scripts used are loaded via an approved CDN. Before deployment the site was tested on several browsers and devices. This site is supported all browsers. Check below for tested devices and browsers.
 
 ## Testing
-Live Demo Here: https://code-institute-milestone-project-1-olivermortimer.c9users.io/about.html
+Live Demo Here: https://oliver-mortimer.github.io/code-institute-milestone-project-1/
 External sites used:
 Bootstrap - The web framework used
 W3 Schools - Help & tips
