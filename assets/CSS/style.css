@@ -394,6 +394,7 @@ iframe {
     color: black;
     padding-left: 5px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .social-links,
@@ -401,7 +402,6 @@ iframe {
 .footer-about {
     margin: -15px;
     padding-left: 15px;
-    padding-bottom: 20px;
 }
 
 .center-form {
